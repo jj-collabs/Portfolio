@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Abel Junior Matlhare - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-blue-900 text-white p-6 text-center">
+        <h1 class="text-3xl font-bold">Abel Junior Matlhare</h1>
+        <p class="text-xl">BSc Information Technology Student | Aspiring Software Developer</p>
+    </header>
+
+    <!-- Navigation Tabs -->
+<nav class="bg-white shadow-md">
+  <ul class="flex justify-center space-x-6 p-4 text-blue-900 font-semibold">
+    <li><a href="#summary" class="hover:text-blue-600">Summary</a></li>
+    <li><a href="#about" class="hover:text-blue-600">About Me</a></li>
+    <li><a href="#resume" class="hover:text-blue-600">Resume</a></li>
+    <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+    <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+  </ul>
+</nav>
+
+
+    <div class="flex justify-center mt-6">
+        <img src="profile.jpg" alt="Profile picture" onclick="openModal()" class="w-40 h-40 rounded-full border-4 border-blue-900 shadow-md object-cover cursor-pointer hover:scale-105 transition" />
+    </div>
+
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 hidden justify-center items-center z-50">
+        <span onclick="closeModal()" class="absolute top-4 right-6 text-white text-4xl cursor-pointer modal-close-button">
+            &times;
+        </span>
+        <img src="profile.jpg" alt="Enlarged Profile" class="max-w-full max-h-[80vh] rounded shadow-lg border-4 border-white" />
+    </div>
+
+    <section id="summary" class="p-6 bg-gray-100">
+        <h2 class="text-2xl font-semibold mb-2">Professional Summary</h2>
+        <p>
+            Motivated and detail-oriented BSc Information Technology student at North-West University,
+            with a strong foundation in software development, database management, and desktop application design.
+            Passionate about solving real-world problems through technology and currently seeking opportunities in
+            software development or IT support.
+        </p>
+    </section>
+
+    <section id="about" class="p-6">
+        <h2 class="text-2xl font-semibold mb-2">About Me</h2>
+        <p>Hello! I'm Abel Junior Matlhare, a South African IT student currently completing my BSc in Information Technology at North-West University. I have a passion for problem-solving, coding, and continuous learning in the tech space.</p>
+    </section>
+
+    <section id="resume" class="p-6 bg-white">
+        <h2 class="text-2xl font-semibold mb-2">Resume</h2>
+        <ul class="list-disc ml-5">
+            <li><strong>Current Qualification:</strong> BSc Information Technology, NWU</li>
+            <li><strong>Previous:</strong> Higher Certificate in IT, Pearson Institute (2017)</li>
+            <li><strong>Programming Languages:</strong> Python, Java, C#, C++</li>
+            <li><strong>Database Skills:</strong> SQL, MySQL, Oracle, Microsoft Access, SQL Server</li>
+        </ul>
+        <a href="CV_AJ_Matlhare.pdf" download class="mt-4 inline-block bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded shadow-md transition duration-300 ease-in-out">📄 Download My CV</a>
+    </section>
+
+    <section id="projects" class="p-6">
+        <h2 class="text-2xl font-semibold mb-2">Projects</h2>
+
+        <div class="mb-4">
+  <h3 class="text-xl font-semibold">Financial Management System</h3>
+  <p class="text-sm text-gray-600 mb-1">Built with C# (.NET Framework) and SQL</p>
+  <p>
+    A desktop application developed in Visual Studio using C# and the .NET Framework.
+    Users could register accounts, record income/expenses, and generate profit and loss
+    statements. Integrated SQL database support using ADO.NET for full CRUD functionality.
+  </p>
+  <a href="https://github.com/jj-collabs/CRUD-Financial-Management-System.git" target="_blank"
+     class="inline-block mt-2 text-blue-700 hover:underline">
+    🔗 View on GitHub
+  </a>
+</div>
+
+
+        <div class="mb-4">
+            <h3 class="text-xl font-semibold">Hair Salon Database System</h3>
+            <p class="text-sm text-gray-600 mb-1">Built with Oracle SQL</p>
+            <p>
+                Designed and implemented a relational database for a hair salon to manage client appointments,
+                services, stylists, and payment records. Focused on database normalization, integrity, and reporting.
+            </p>
+            <a href="https://github.com/jj-collabs/SQL-Project.git" target="_blank"
+               class="inline-block mt-2 text-blue-700 hover:underline">
+    🔗 View on GitHub
+  </a>
+        </div>
+
+        <div class="mb-4">
+            <h3 class="text-xl font-semibold">LAN Network Deployment</h3>
+            <p class="text-sm text-gray-600 mb-1">Designed with Cisco Packet Tracer</p>
+            <p>
+                Designed and implemented a LAN simulation with over 100 devices including routers, switches, PCs,
+                wireless access points, and a central server. The network was configured with static IP addressing,
+                subnetting, and full inter-device connectivity. The central server provided services such as file sharing
+                or DNS to emulate a real-world enterprise infrastructure.
+            </p>
+            <a href="https://github.com/jj-collabs/Networks_Project.git" target="_blank"
+     class="inline-block mt-2 text-blue-700 hover:underline">
+    🔗 View on GitHub
+  </a>
+        </div>
+    </section>
+
+    <section id="contact" class="p-6 bg-blue-900 text-white text-center">
+        <h2 class="text-2xl font-semibold mb-2">Contact Me</h2>
+        <div class="flex justify-center items-center space-x-2 mb-2">
+  <img src="email.png" alt="Email Icon" class="h-5 w-5" />
+  <span>matlharejunior@gmail.com</span>
+</div>
+
+<div class="flex justify-center items-center space-x-2">
+  <img src="phone.png" alt="Phone Icon" class="h-5 w-5" />
+  <span>063 619 4281</span>
+</div>
+
+        
+
+    <section class="bg-blue-900 text-white text-center py-4">
+  <h2 class="text-xl font-semibold mb-2">Follow Me</h2>
+  <div class="flex justify-center space-x-4">
+    <a href="https://www.facebook.com/aj.matlhare" target="_blank">
+      <img src="facebook.png" alt="Facebook" class="w-8 h-8 hover:scale-110 transition" />
+    </a>
+    <a href="https://www.linkedin.com/in/aj-matlhare-376574351" target="_blank">
+      <img src="linkedin.png" alt="LinkedIn" class="w-8 h-8 hover:scale-110 transition" />
+    </a>
+    <a href="https://x.com/BabyBoi_Savage" target="_blank">
+      <img src="x.png" alt="X/Twitter" class="w-8 h-8 hover:scale-110 transition" />
+    </a>
+    <a href="https://www.instagram.com/babyboisavage_sa/" target="_blank">
+      <img src="instagram.png" alt="Instagram" class="w-8 h-8 hover:scale-110 transition" />
+    </a>
+    <a href="https://github.com/jj-collabs" target="_blank">
+      <img src="github.png" alt="GitHub" class="w-8 h-8 hover:scale-110 transition" />
+    </a>
+  </div>
+</section>
+
+
+    <footer class="text-center p-4 text-sm text-white bg-blue-900">
+        &copy; 2025 Abel Junior Matlhare. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
